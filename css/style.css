@@ -1,0 +1,399 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    Font-size: 18px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 1 START LANDING PAGE */
+.land h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 200px;
+}
+
+.btn-try {
+    background-color: var(--Very-Pale);
+    box-shadow: 0 0px 55px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+    padding: 25px;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn-try:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.btn-started {
+    background-color: var(--Pink);
+    color: #fff;
+    padding: 12px 35px;
+}
+
+.btn-started:hover {
+    background-color: hsl(322, 100%, 77%);
+    color: #fff;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.letter {
+    margin-left: 40px;
+}
+
+/* End LANDING PAGE*/
+
+/* boxs */
+.box-style {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 60px;
+    margin: 100px 0;
+}
+
+.first-pic {
+    margin-left: 1rem;
+    width: 500px;
+}
+
+.Grow p {
+    max-width: 460px;
+}
+
+.flowing .text {
+    margin-left: 120px;
+}
+
+.flowing p {
+    max-width: 450px;
+}
+
+.Users p {
+    max-width: 460px;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+}
+
+.facebook:hover {
+    color: #1877f2;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.insta:hover {
+    color: #833ab4;
+}
+
+.copy span {
+    color: var(--Pink);
+}
+
+/* MEDIA SCREEN*/
+
+/* FOR MEDIA SCREEN */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 20px;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .btn-try {
+        margin-right: 15px;
+    }
+
+    .land {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .land p {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .letter {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .land h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .first-pic {
+        margin-top: 50px;
+        width: 250px;
+    }
+
+}
+
+
+.image-container {
+    position: relative;
+}
+
+img,
+p {
+    transition: transform 1s ease;
+}
+
+h4 {
+    transition: 0.5s;
+}
+
+h1 {
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scaleX(1.1) rotate(3deg);
+}
+
+p:hover {
+    transform: scale(1.1);
+}
+
+h4:hover {
+    color: var(--Pink);
+}
+
+h1:hover {
+    color: var(--Pink);
+}
+
+@media (max-width: 768px) {
+    .body {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .btn-try {
+        width: 20%;
+        background-color: var(--Very-Pale);
+        box-shadow: 0 0px 55px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+        padding: 10px;
+        font-size: 10px;
+        margin-right: 15px;
+    }
+
+    .btn-started {
+        font-size: 14px;
+        padding: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .first-pic {
+        margin-left: 0;
+        width: 300px;
+    }
+
+    .description {
+        /* max-width: 500px; */
+        padding: 0 50px;
+    }
+
+    .land {
+        flex-direction: column;
+    }
+
+    .land h1 {
+        font-size: 25px;
+    }
+
+    .land .letter {
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+
+    .Grow {
+        flex-direction: column;
+    }
+
+    .flowing {
+        flex-direction: column;
+    }
+
+    .flowing .text {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    .Users {
+        flex-direction: column;
+    }
+
+    .foot {
+        flex-direction: column;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100;
+        margin: 0 auto;
+    }
+
+    .landing {
+        overflow-x: hidden;
+    }
+
+    .btn-try {
+        margin-right: 20px;
+    }
+}
+
+/* MEDIA SCREEN */
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    color: white;
+}
+
+.inner-header {
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        width: 100%;
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
